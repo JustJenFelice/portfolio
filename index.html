@@ -782,7 +782,7 @@
 				document.body.classList.add("loaded");
 			}
 
-			if (window.location.pathname === "/") {
+			if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
 				document.addEventListener("DOMContentLoaded", function () {
 					setTimeout(markLoaded, 0);
 				});
