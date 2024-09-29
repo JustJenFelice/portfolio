@@ -79,6 +79,17 @@
     transform: translateX(0);
   }
 }
+@keyframes wave {
+  0% {
+    rotate: 0;
+  }
+  50% {
+    rotate: 3deg;
+  }
+  100% {
+    rotate: 0;
+  }
+}
 @keyframes blink {
   0% {
     opacity: 1;
@@ -98,7 +109,8 @@
   animation: blink 3.5s infinite;
 }
 .arm {
-  animation: waveTwo 2s linear infinite;
+  animation: wave 2s linear infinite;
+  transform-origin: 50% 100%;
 }
 
 .grid-container {
@@ -435,6 +447,7 @@ article p a:hover {
 .intro {
   margin-bottom: 10vh;
   text-align: center;
+  max-inline-size: 1000px;
 }
 
 .intro p {
