@@ -447,7 +447,7 @@ article p a:hover {
 .intro {
   margin-bottom: 10vh;
   text-align: center;
-  max-inline-size: 1000px;
+/*   max-inline-size: 1000px; */
 }
 
 .intro p {
