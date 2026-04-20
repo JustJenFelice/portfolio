@@ -538,6 +538,12 @@ article p a:hover {
     color 0.3s ease 0s,
     opacity 0.6s ease 0s,
     transform 0.6s;
+}
+
+/* Preserve whitespace for HTML spans only. SVG <tspan> should collapse
+   whitespace so that formatter-introduced newlines don't render as wide
+   gaps inside the name SVG. */
+span.animated-item {
   white-space: pre;
 }
 
