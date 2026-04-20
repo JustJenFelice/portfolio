@@ -33,13 +33,12 @@ tooling only exists to keep the source tidy.
 
 ## Deploy
 
-The repo includes a GitHub Actions workflow
-(`.github/workflows/pages.yml`) that publishes the contents of `main` to
-GitHub Pages. To use it, enable Pages in the repo settings and choose
-"GitHub Actions" as the source.
+The site is hosted on [Porkbun](https://porkbun.com/) and publishes directly
+from this GitHub repo — pushes to `main` become live. No build step runs; the
+files in the repo root are served as-is.
 
-Any static host (Netlify, Vercel, Cloudflare Pages, S3 + CloudFront, …) also
-works — just point it at the repo root.
+Any static host (Netlify, Vercel, Cloudflare Pages, S3 + CloudFront, GitHub
+Pages, …) would also work — just point it at the repo root.
 
 ## Project layout
 
