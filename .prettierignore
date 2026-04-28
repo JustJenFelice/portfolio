@@ -1,0 +1,8 @@
+assets/
+*.min.*
+node_modules/
+
+# Existing site source — formatting will be normalized in a follow-up PR
+# (a Prettier-only diff is too large to land alongside tooling).
+index.html
+style.css
